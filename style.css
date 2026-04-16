@@ -633,7 +633,7 @@ main .section-first-view {
 @media (max-width: 768px) {
 
    .box-section-commitments {
-      padding: 90px 18px;
+      padding: 90px 0px;
    }
 
    .box-section-commitments h2 {
