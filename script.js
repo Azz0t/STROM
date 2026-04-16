@@ -1,9 +1,13 @@
 /*==========| Header |==========*/
 const buttonsJoin = document.querySelectorAll('.button-join');
+const header = document.querySelector('header');
+const nav = document.querySelector('.main-nav');
+
+const isMobile = window.matchMedia("(max-width: 768px)");
 
 window.addEventListener('scroll', function () {
-    const header = document.querySelector('header');
-    const nav = document.querySelector('.main-nav');
+
+    if (isMobile.matches) return;
 
     if (window.scrollY > 10) {
         header.classList.add('scrolled');
@@ -16,9 +20,7 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// ========================
-// Language switcher
-// ========================
+/*==========| Language switcher |==========*/
       function setLang(lang) {
          document.querySelectorAll('[data-lang]').forEach(el => {
             el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
@@ -26,7 +28,7 @@ window.addEventListener('scroll', function () {
          document.getElementById('btn-en').classList.toggle('active', lang === 'EN');
          document.getElementById('btn-ru').classList.toggle('active', lang === 'RU');
       }
-      setLang('EN');
+      setLang('RU');
 
 /*==========| box-commander |==========*/
 let hasScrolled = false;
