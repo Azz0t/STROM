@@ -1,248 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="STORM — легендарный клан игры Stay Out / Stalker Online, самый старый и сильнейший. ВСЕХ УБИТЬ — ВСЕ ЗАБРАТЬ">
-   <meta name="keywords" content="Stay Out, Stalker Online, Сталкер Онлайн, Stalker, Сталкер мод, Сталкер моды, Stalker Mod, Stalker Mods, Storm, Шторм, Штормы, PK-raid, ПК-рейд, Death Storm Clan, Stay Out Clan, Stay Out Clans, Stay Out Clans EU1, Stay Out клан, Stay Out кланы, Stay Out кланы ЕУ1, Stalker Online Clan, Stalker Online Clans, Stalker Online Clans EU1, Сталкер Онлайн клан, Сталкер Онлайн кланы, Сталкер Онлайн кланы ЕУ1">
-   <meta name="author" content="Azzote, Azz0t, Nikita Kuznetsov">
-   <meta name="robots" content="index, follow">
-   <!--| title |-->
-   <title>STORM | Death Storm Clan</title>   
-   <!--| favicon |-->
-   <link rel="icon" href="img/logos/icon.png" type="image/png" />
-   <!--| style-css |-->
-   <link rel="stylesheet" href="style.css">
-   <!--| google-font |-->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-   <!--| font-awesome |-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <!--| favicon |-->
+    <link rel="icon" type="images/x-icon" href="/./images/logos/favicon.ico">
+    <!--| title |-->
+    <title>Mon Site Web</title>
+    <!--| css |-->
+    <link rel="stylesheet" href="style.css">
+    <!--| three.js |-->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+    <!--| fonts |-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Cairo:wght@200..1000&family=DM+Serif+Display:ital@0;1&family=Iceland&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-   <!--| HEADER |-->
-   <header>
-      <nav>
-         <ul class="main-nav">
-            <li class="underlines-dynamic">
-               <a href="#section-history" data-lang="EN"><strong>History</strong></a>
-               <a href="#section-history" data-lang="RU"><strong>История</strong></a>
-            </li>
-            <li class="underlines-dynamic">
-               <a href="#section-commitments" data-lang="EN"><strong>Commitments</strong></a>
-               <a href="#section-commitments" data-lang="RU"><strong>Деятельность</strong></a>
-            </li>
-            <li class="underlines-dynamic">
-               <a href="#section-commander" data-lang="EN"><strong>Commanders</strong></a>
-               <a href="#section-commander" data-lang="RU"><strong>Командование</strong></a>
-            </li>
-            <li class="underlines-dynamic">
-               <a href="#section-gallery" data-lang="EN"><strong>Gallery</strong></a>
-               <a href="#section-gallery" data-lang="RU"><strong>Галерея</strong></a>
-            </li>
-         </ul>
-         <ul>
-            <li>
-               <a href="https://m.vk.com/app5619682_-59785700?act=app_r&ref=group_widget" class="button-join big" data-lang="EN"><strong>Join clan</strong></a>
-            </li>
-            <li>
-            <a href="https://m.vk.com/app5619682_-59785700?act=app_r&ref=group_widget" class="button-join big" data-lang="RU"><strong>Вступить в клан</strong></a>
-            </li>
-         </ul>
-      </nav>
-   </header>
 
-   <!--| language-selector |-->
-   <div class="lang-switch-bottom-right">
-      <button id="btn-en" class="lang-btn active" onclick="setLang('EN')">EN</button>
-      <button id="btn-ru" class="lang-btn" onclick="setLang('RU')">RU</button>
-   </div>
+    <!--| HEADER |-->
+    <header>
+        <nav>
+            <a href="#section-first" class="nav-icon">
+                <img 
+                    src="./images/icons/icon-house.svg" 
+                    alt=""
+                />
+            </a>
+            <div class="nav-separator"></div>
+            <a href="#section-activity" data-lang="EN"><strong>ACTIVITIES</strong></a>
+            <a href="#section-activity" data-lang="RU"><strong>АКТИВНОСТИ</strong></a>
+            
+            <a href="#section-history" data-lang="EN"><strong>HISTORY</strong></a>
+            <a href="#section-history" data-lang="RU"><strong>ИСТОРИЯ</strong></a>
 
-   <!--| MAIN |-->
-   <main>
-      <!--| section-first-view |-->
-      <section id="section-first-view" class="box-section-first-view">
-         <div class="section-first-view">
-            <div>
-               <div class="title-wrapper">
-                  <div class="bg-block"></div>
-                  <div class="box-text">
-                     <p class="slogan" data-lang="EN"><strong>KILL EVERYONE - TAKE EVERYTHING</strong></p>
-                     <p class="slogan" data-lang="RU"><strong>ВСЕХ УБИТЬ — ВСЕ ЗАБРАТЬ</strong></p>
-                     <img class="img-h1" src="img/logos/STORM.png" alt="logo-of-STORM">
-                  </div>
-               </div>
-               <p class="sous-h1" data-lang="EN">
-                  And the world will fall into darkness at our hands.<br>
-                  And everything created by mortal hands will fall.<br>
-                  And all hope will turn to ashes.
-               </p>
-               <p class="sous-h1" data-lang="RU">
-                  И мир падёт во тьму от рук наших.<br>
-                  И все, что создано руками смертных, падет.<br>
-                  И вся надежда обратится в пепел.
-               </p>
+            <a href="#section-сommand" data-lang="EN"><strong>COMMAND</strong></a>
+            <a href="#section-сommand" data-lang="RU"><strong>КОМАНДОВАНИЕ</strong></a>
+
+            <a href="#section-gallery" data-lang="EN"><strong>GALLERY</strong></a>
+            <a href="#section-gallery" data-lang="RU"><strong>ГАЛЕРЕЯ</strong></a>
+
+            <a href="#section-video" data-lang="EN"><strong>VIDEO</strong></a>
+            <a href="#section-video" data-lang="RU"><strong>ВИДЕО</strong></a>
+            <div class="nav-separator"></div>
+
+            <a href="#" id="btn-en" onclick="setLang('EN');return false;">
+                EN
+            </a>
+
+            <a href="#" id="btn-ru" onclick="setLang('RU');return false;">
+                RU
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--| SECTION FIRST VIEW |-->
+        <section id="section-first" class="section-first">
+
+            <div class="content-left">
+                <img
+                    src="./images/title.png"
+                    alt=""
+                    class="title"
+                />
+                <p class="slogan" data-lang="EN">KILL EVERYONE — TAKE EVERYTHING</p>
+                <p class="slogan" data-lang="RU">ВСЕХ УБИТЬ — ВСЁ ЗАБРАТЬ</p>
+                <a href="https://vk.com/dsc_official?w=app5619682_-59785700" class="cta-button" data-lang="EN">
+                    JOIN CLAN
+                </a>
+                <a href="https://vk.com/dsc_official?w=app5619682_-59785700" class="cta-button" data-lang="RU">
+                    ВСТУПИТЬ В КЛАН
+                </a>
             </div>
-            <div class="box-img">
-               <img class="logo" src="img/logos/logo-6-top.png" alt="logo-of-STORM">
+
+            <div class="logo-container">
+                <div class="glow-effect"></div>
+                <img 
+                    src="./images/logos/logo-main.png" 
+                    alt="Logo" 
+                    class="logo"
+                />
             </div>
-         </div>
-      </section>
 
-      <!--| section-history |-->
-      <section id="section-history" class="box-section-history">
-         <div class="box-image">
-            <img id="rotating-image" src="./img/logos/logo-2.png" alt="Image">
-         </div>
-         <div class="box-text">
-            <h2>
-               <strong data-lang="EN">WHO WE ARE ?</strong>
-               <strong data-lang="RU">КТО МЫ ?</strong>
-            </h2>
-            <p data-lang="EN">
-               STORM was born in 2009, when the STALKER ONLINE project brought together those who refused to submit to the rules of others. Our only law :<br> <span class="txt-red"><strong>« KILL EVERYONE - TAKE EVERYTHING »</strong></span>
-            </p>
-            <p data-lang="RU">
-               STORM родился в 2009 году, когда в проекте STALKER ONLINE собрались те, кто отказался жить по чужим правилам. Наш единственный закон :<br> <span class="txt-red"><strong>« ВСЕХ УБИТЬ — ВСЕ ЗАБРАТЬ »</strong></span>
-            </p>
-            <p data-lang="EN">
-               Since then, we have become the curse of the Zone, leaving our name in its history as a seal of fear. Wherever STORM sets foot, only death remains. We are not a clan — we are a plague. We are not players — we are the antagonists.
-            </p>
-            <p data-lang="RU">
-               С тех пор мы стали проклятием зоны, оставив своё имя в её истории как печать доминирования и страха. Там, где ступает STORM, остаётся только смерть. Мы не клан — мы чума. Мы не игроки — мы антагонисты.
-            </p>
-            <p data-lang="EN" class="text-700">
-               Do you want to be one of us? This is not a request — this is a challenge.
-            </p>
-            <p data-lang="RU" class="text-700">
-               Хочешь быть одним из нас? Это не просьба — это вызов.
-            </p>
-         </div>
-      </section>
-
-      <!--| img-between |-->
-      <div class="img-between">
-         <div class="img-between-degrader"></div>
-      </div>
-
-      <!--| section-commitments |-->
-      <section id="section-commitments" class="box-section-commitments">
-         <h2>
-            <strong data-lang="EN">OUR ACTIVITIES</strong>
-            <strong data-lang="RU">ДЕЯТЕЛЬНОСТЬ КЛАНА</strong>
-         </h2>
-         <div class="commitments-cards">
-            <div class="commitments-card">
-               <div class="image" style="background-image: url('./img/activities/activitie-1.png');"></div>
-               <h3 data-lang="EN">Base Capture</h3>
-               <h3 data-lang="RU">Захват баз</h3>
+            <div class="content-right">
+                <img
+                    src="./images/pers-dark.png"
+                    alt=""
+                    class=""
+                />
             </div>
-            <div class="commitments-card">
-               <div class="image" style="background-image: url('./img/activities/activitie-2.jpg');"></div>
-               <h3 data-lang="EN">Clan Farming - B13</h3>
-               <h3 data-lang="RU">Клановый фарм - B13</h3>
+
+            <div class="scroll-mouse"></div>
+
+        </section>
+
+
+
+        <!--| SECTION ACTIVITY |-->
+        <section id="section-activity" class="section-activity">
+
+            <h2 data-lang="EN"><strong>CLAN ACTIVITIES</strong></h2>
+            <h2 data-lang="RU"><strong>АКТИВНОСТИ КЛАНА</strong></h2>
+            <img src="./images/separator.png" alt="" class="title-underline">
+
+            <div class="commitments-cards">
+                <div class="commitments-card">
+                    <div class="box-image">
+                        <img src="./images/activities/activitie-1.png" alt="Base Capture">
+                    </div>
+                    <h3 data-lang="EN">BASE — CAPTURE</h3>
+                    <h3 data-lang="RU">ЗАХВАТ БАЗ</h3>
+                </div>
+
+                <div class="commitments-card">
+                    <div class="box-image">
+                        <img src="./images/activities/activitie-2.png" alt="Clan Farming - B13">
+                    </div>
+                    <h3 data-lang="EN">CLAN FARMING — B13</h3>
+                    <h3 data-lang="RU">ФАРМ КЛАНА — B13</h3>
+                </div>
+
+                <div class="commitments-card">
+                    <div class="box-image">
+                        <img src="./images/activities/activitie-3.jpg" alt="PK - Raid">
+                    </div>
+                    <h3 data-lang="EN">PK — RAID</h3>
+                    <h3 data-lang="RU">ПК — РЕЙДЫ</h3>
+                </div>
             </div>
-            <div class="commitments-card commitments-card-1">
-               <div class="image">
-                  <div class="bg default" style="background-image: url('./img/activities/activitie-3-3.jpg');"></div>
-                  <div class="bg hover" style="background-image: url('./img/activities/activitie-3.jpg');"></div>
-               </div>
-               <h3 data-lang="EN">PK - Raid</h3>
-               <h3 data-lang="RU">PK - рейды</h3>
+        </section>
+
+
+
+        <!--| SECTION HISTORY |-->
+        <section id="section-history" class="section-history">
+            <div class="box-image">
+                <img id="rotating-image" src="./images/logos/logo-2.png" alt="Image">
             </div>
-         </div>
-      </section>
-
-      <!--| img-between |-->
-      <div class="img-between-2">
-         <div class="img-between-degrader"></div>
-      </div>
-
-      <!--| section-commander |-->
-      <section id="section-commander" class="box-section-commander">
-         <div class="section-commander">
-            <h2 class="titre-section">
-               <strong data-lang="EN">Commanders</strong>
-               <strong data-lang="RU">Офицерский состав</strong>
-            </h2>
-            <img src="./img/separator.png" alt="underline" class="underline-img">
-            <div class="grid-3">
-
-               <div class="box-commander">
-                  <img src="./img/commanders/commander-1.png"
-                     onmouseover="this.src='./img/commanders/commander-1.png'"
-                     onmouseout="this.src='./img/commanders/commander-1.png'">
-                  <div class="box-texte-commander">
-                     <h3>Axe</h3>
-                     <p data-lang="EN">Council</p>
-                     <p data-lang="RU">Совет</p>
-                  </div>
-               </div>
-
-               <div class="box-commander">
-                  <img src="./img/commanders/commander-3.png"
-                     onmouseover="this.src='./img/commanders/commander-3-en-hover.png'"
-                     onmouseout="this.src='./img/commanders/commander-3.png'">
-                  <div class="box-texte-commander">
-                     <h3>Haesya</h3>
-                     <p data-lang="EN">Deputy Council</p>
-                     <p data-lang="RU">Зам Совета</p>
-                  </div>
-               </div>
-
-               <div class="box-commander">
-                  <img src="./img/commanders/commander-2.png"
-                     onmouseover="this.src='./img/commanders/commander-2-en-hover.png'"
-                     onmouseout="this.src='./img/commanders/commander-2.png'">
-                  <div class="box-texte-commander">
-                     <h3>Finkk</h3>
-                     <p data-lang="EN">Officer</p>
-                     <p data-lang="RU">Офицер</p>
-                  </div>
-               </div>
-
+            <div class="box-text">
+                <h2 data-lang="EN"><strong>WHO WE ARE ?</strong></h2>
+                <h2 data-lang="RU"><strong>КТО МЫ?</strong></h2>
+                <p data-lang="EN">
+                STORM has existed since 2009. Since then, we have become the scourge of the Zone, etching our name into its history as a symbol of dominance and terror. Where STORM treads, only death remains. We are not a clan — we are a plague. We are not players — we are antagonists.
+                <br>
+                Our only law : « <strong>KILL EVERYONE — TAKE EVERYTHING</strong> »
+                </p>
+                <p data-lang="RU">
+                STORM существует с 2009 года. С тех пор мы стали бичом Зоны, вписав своё имя в её историю как символ превосходства и страха. Где проходит STORM — там остаётся только смерть. Мы не клан — мы чума. Мы не игроки — мы антагонисты.
+                <br>
+                Наш единственный закон: « <strong>УБИТЬ ВСЕХ — ЗАБРАТЬ ВСЁ</strong> »
+                </p>
             </div>
-         </div>
-      </section>
+        </section>
 
-      <!--| section-gallery |-->
-      <section id="section-gallery" class="box-section-gallery">
-         <div class="section-gallery">
-            <h2 class="titre-section">
-               <strong data-lang="EN">Gallery</strong>
-               <strong data-lang="RU">Галерея</strong>
-            </h2>
-            <img src="./img/separator.png" alt="underline" class="underline-img">
 
-            <div class="grid-gallery">
-               <img src="./img/gallery/img-gallery-2.png" alt="image-gallery-1">
-               <img src="./img/gallery/img-gallery-3.png" alt="image-gallery-1">
-               <img src="./img/gallery/img-gallery-4.png" alt="image-gallery-1">
-               <img src="./img/gallery/img-gallery-5.png" alt="image-gallery-1">
-               <img src="./img/gallery/img-gallery-1.png" alt="image-gallery-1">
-               <img src="./img/gallery/img-gallery-6.png" alt="image-gallery-1">
-               <img src="./img/gallery/img-gallery-7.png" alt="image-gallery-1">
-               <img src="./img/gallery/img-gallery-8.png" alt="image-gallery-1">
-               <img src="./img/gallery/img-gallery-9.png" alt="image-gallery-1">
+
+        <!--| SECTION COMMANDER |-->
+        <section id="section-сommand" class="section-сommand">
+            <div class="box-commanders">
+                <h2 data-lang="EN" class="titre-section">
+                <strong>COMMANDERS</strong>
+                </h2>
+
+                <h2 data-lang="RU" class="titre-section">
+                <strong>КОМАНДИРЫ</strong>
+                </h2>
+                <img src="./images/separator.png" alt="underline" class="title-underline">
+        
+                <div class="grid-3">
+                    <div class="box-commander rank-council">
+                        <span class="rank-tag" data-lang="EN">Council</span>
+                        <span class="rank-tag" data-lang="RU">Совет</span>
+                        <div class="box-image">
+                            <img src="./images/commanders/commander-1.png" alt="Axe"/>
+                        </div>
+                        <div class="box-texte">
+                            <h3>Axe</h3>
+                            <p data-lang="EN">— Council</p>
+                            <p data-lang="RU">— Совет</p>
+                        </div>
+                    </div>
+        
+                    <div class="box-commander rank-deputy">
+                        <span class="rank-tag" data-lang="EN">Deputy</span>
+                        <span class="rank-tag" data-lang="RU">Заместитель</span>
+                        <div class="box-image">
+                            <img src="./images/commanders/commander-2.png" alt="Haesya"/>
+                        </div>
+                        <div class="box-texte">
+                            <h3>Haesya</h3>
+                            <p data-lang="EN">— Deputy Council</p>
+                            <p data-lang="RU">— Заместитель Совета</p>
+                        </div>
+                    </div>
+        
+                    <div class="box-commander rank-officer">
+                        <span class="rank-tag" data-lang="EN">Officer</span>
+                        <span class="rank-tag" data-lang="RU">Офицер</span>
+                        <div class="box-image">
+                            <img src="./images/commanders/commander-3.png" alt="Finkk"/>
+                        </div>
+                        <div class="box-texte">
+                            <h3>Seven</h3>
+                            <p data-lang="EN">— Officer</p>
+                            <p data-lang="RU">— Офицер</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </section>
+        </section>
 
-   </main>
 
-   <!--| FOOTER |-->
-   <footer>
-      <p data-lang="EN">© 2026 — <strong>Azz0t</strong>. &nbsp;All rights reserved.</p>
-      <p data-lang="RU">© 2026 — <strong>Azz0t</strong>. &nbsp;Все права защищены.</p>
-   </footer>
+        <img
+            src="./images/back-1.png"
+            class="img-full"
+            alt=""
+        />
 
-   <script src="script.js"></script>
+
+        <!--| SCROLL GALLERY |-->
+        <section id="section-gallery" class="section-gallery">
+        <div class="row">
+            <div class="track">
+            <div class="card"><img src="./images/scroll-gallery/gallery-1.png"></div>
+            <div class="card"><img src="./images/scroll-gallery/gallery-2.png"></div>
+            <div class="card"><img src="./images/scroll-gallery/gallery-3.png"></div>
+            <div class="card"><img src="./images/scroll-gallery/gallery-4.png"></div>
+            <div class="card"><img src="./images/scroll-gallery/gallery-5.png"></div>
+            <div class="card"><img src="./images/scroll-gallery/gallery-6.png"></div>
+            <div class="card"><img src="./images/scroll-gallery/gallery-7.png"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="track">
+            <div class="card"><img src="./images/scroll-gallery/gallery-8.png"></div>
+            <div class="card"><img src="./images/scroll-gallery/gallery-9.png"></div>
+            <div class="card"><img src="./images/scroll-gallery/gallery-10.png"></div>
+            <div class="card"><img src="./images/scroll-gallery/gallery-11.png"></div>
+            <div class="card"><img src="./images/scroll-gallery/gallery-12.png"></div>
+            <div class="card"><img src="./images/scroll-gallery/gallery-13.png"></div>
+            <div class="card"><img src="./images/scroll-gallery/gallery-14.png"></div>
+            </div>
+        </div>
+        </section>
+
+
+
+        <!--| SECTION VIDEO |-->
+        <section id="section-video" class="section-video">
+            <div class="grid-section-video">
+                <a href="https://www.youtube.com/watch?v=zbfNmt2aTag" 
+                    class="card top-left"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="./images/video/back-video-1.jpg" alt="">
+                    <div class="play">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/shorts/R_3t4eYOBb8"
+                    class="card top-right"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <img src="./images/video/back-video-2.jpg" alt="">
+
+                    <div class="play">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/shorts/dDWyY-YnMQc" 
+                    class="card bottom-left"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="./images/video/back-video-3.jpg" alt="">
+                    <div class="play">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="card center">
+                    <img src="./images/logos/logo-square.png" alt="">
+                    <div class="play">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=hkRiiIzEVmk" 
+                    class="card bottom-center"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="./images/video/back-video-4.jpg" alt="">
+                    <div class="play">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+
+        <!--| JOIN SECTION |-->
+        <section id="skull-container">
+            <div class="overlay">
+                <div class="left-space"></div>
+
+                <div class="right-content">
+                    <a href="https://vk.com/dsc_official?w=app5619682_-59785700" class="cta-button" data-lang="EN">
+                    JOIN CLAN
+                    </a>
+                    <a href="https://vk.com/dsc_official?w=app5619682_-59785700" class="cta-button" data-lang="RU">
+                    ВСТУПИТЬ В КЛАН
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+
+    <!--| FOOTER |-->
+    <footer>
+        <p>© 2026 — <strong>Azz0t</strong>. &nbsp;All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
 
 </body>
-
 </html>
